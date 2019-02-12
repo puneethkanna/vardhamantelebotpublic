@@ -14,9 +14,6 @@ from bottle import (
 )
 import os
 import marks as gpa
-#from selenium import webdriver
-#from webdriver_manager.chrome import ChromeDriverManager
-#from selenium.webdriver.common.keys import Keys
 API_TOKEN = 'APITOKEN'
 bot = telebot.TeleBot(API_TOKEN)
 server = Flask(__name__)
@@ -63,10 +60,7 @@ def help(message):
      '/attendance',
      '/logout' 
      for now.""")
-	
-# error handling if user isn't known yet
-# (obsolete once known users are saved to file, because all users
-#   had to use the /start command and are therefore known to the bot)
+	)
 '''def get_user_step(uid):
 	if uid in userStep:
 	        return userStep[uid]
